@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY MORNING </h1>
+    
+    <div class="stats" id="stats"><form>
+        <h2>Personalize Your Character</h2>
+        <p>Name:<input type="text" id="name" placeholder="Skurve"></p>
+        <p>This name will be used on the leaderboard, if you use the same name</p>
+        <br />
+        <p>Best Friend:<input type="text" id="f1" placeholder="Froshy McAsscrank"></p>
+        <p>Friend Group Member:<input type="text" id="f2" placeholder="Brock Jones"></p>
+        <p>Friend Group Member:<input type="text" id="f3" placeholder="The Closet Resident"></p>
+        <p>Friend Group Member:<input type="text" id="f4" placeholder="Random Lloydie"></p>
+        <br />
+        <h4>Distribute 40 points into the following stats:</h4>
+        <p>Luck:         <input type="number" id="luck" value="10" disabled> 
+            <button type="button" id="l+" onclick="luckplus();">+</button>
+            <button type="button" id="l-" onclick="luckmin();">-</button></p>
+        <p>Period (in days) between instances of you tripping or dropping things</p>
+        <p>Charisma:     <input type="number" id="charisma" value="10" disabled>
+            <button type="button" id="c+" onclick="charplus();">+</button>
+            <button type="button" id="c-" onclick="charmin();">-</button></p>
+        <p>5: you can't talk to members of the opposite sex <br>
+            10: friends go out of their way to make conversation<br>
+            15: adults believe your lies and try to help you out<br>
+            20: peers follow your requests without question<br>
+            25: strangers ask if you are the One True Morty</p>
+        <p >Tolerance:   <input type="number" id="tolerance" value="12" disabled>
+            <button type="button" id="t+" onclick="tolplus();">+</button>
+            <button type="button" id="t-" onclick="tolmin();">-</button></p>
+        <p>Approximately 2.5x the number of drinks you could drink over two hours</p>
+        <p>Sleep:        <input type="number" id="sleep" value="8" disabled>
+            <button type="button" id="s+" onclick="sleplus();">+</button>
+            <button type="button" id="s-" onclick="slemin();">-</button></p>
+        <p>Average hours of sleep you got per night over the last week (max 24)</p>
+        <p  class="stats" id="statcount">Total: <input type="number" id="total" value="40" disabled></p>
+        <p><button type="button" id="submit_stats" onclick="submitstats();">Use These Values</button></p>
+    </form></div>
+    
+    
+    <p class="narrative"> 
+        You just got out of Bi 1. You grabbed a bento box at chandler, and are headed to the lounge to eat.
+    </p>
+    
+    <p class="narrative">
+        Your friends $1, $2, $3, and $4 are sitting around the table looking excited.
+    </p>
+    
+    <p class="narrative">
+        $3 looks at you and says "Hey, $n, Are you looking forward to that ACM 217 test?"
+    </p>
+    
+    <p class="narrative"> 
+        You remember that you have an in class quiz later that day and cringe. 
+    </p>
+    
+    <p class="narrative">
+        $4, seeing your reaction, jumps up and exclaims "You know what you'd rather do than take that evil quiz?"
+    </p>
+    
+    <p class="narrative" class="important" >
+        $1, calmly, says "$n, we're going to vegas!" 
+    </p>
+    
+    <p class="narrative"> 
+        You sit on the couch to consider your choices. 
+    </p>
+    
+    <p class="narrative" name="choice">
+        <button onclick="go_desert();">Go To Vegas?</button><button onclick="go_test();">Go To Class?</button>
+    </p>
+    
+    <script>fill_names();</script>
+</body>
+</html>

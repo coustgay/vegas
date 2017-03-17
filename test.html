@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday afternoon</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="test.js"></script>
+
+    <link href="game.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY AFTERNOON </h1>
+    
+    <p> Directions: Answer each question within 5 seconds</p>
+    <button type="button" id="start" onclick="start_test();">Begin Test</button>
+    <button type="button" class="score" id="lose" onclick="go_lose();">Skip to Sunday</button>
+    <p class="score" id="score"></p>
+    <div class="in_game">
+        Time Remaining:<input class="in_game" type="number" id="timer" value="5" disabled>
+        Score<input type="number" id="total" value="0" disabled>
+        <br>
+        <input class="in_game" type="number" id="q1" disabled>
+        <input class="in_game" type="text" id="q2" disabled>
+        <input class="in_game" type="number" id="q3" disabled>
+        <br>
+        <button class="in_game" type="button" id="a" onclick="answera();">a:</button>
+        <button class="in_game" type="button" id="b" onclick="answerb();">b:</button>
+        <button class="in_game" type="button" id="c" onclick="answerc();">c:</button>
+        <button class="in_game" type="button" id="d" onclick="answerd();">d:</button>
+    </div>
+    
+</body>
+</html>

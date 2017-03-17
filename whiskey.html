@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday night</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="whiskey.js"></script>
+
+    <link href="game.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY NIGHT </h1>
+    
+    <p class="in_game" id="yesstat"></p><p class="in_game" id="nostat"></p>
+    
+    <p class="in_game" id="friend"> 
+        $1 passes you the bottle, saying "Alright, $n, you get to run the first test."
+    </p>
+    
+    <p class="in_game" id="you"> 
+        You take a sip, swish it around a little in your mouth, then swallow.
+    </p>
+    
+    
+    <p class="in_game" id="choice">
+        <button type="button" class="in_game" id="yes" onclick="votey();">I feel like it's whiskey</button>
+        <button type="button" class="in_game" id="no" onclick="voten();">I'm not quite sure, I need a second opinion</button>
+    </p>
+    
+    <p class="win" id="win">
+        <button type="button" class="kiss" id="kiss" onclick="go_vegas(1);">Kiss $1</button>
+        <button type="button" class="kiss" id="nokiss" onclick="go_vegas(0);">Run away</button>
+    </p>
+    
+    <p class="in_game"><button type="button" id="vegas" onclick="go_vegas(0);">Go To Sleep</button></p>
+<script>personalize();bake('booze',0);</script>
+</body>
+</html>

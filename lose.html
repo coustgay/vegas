@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sunday Evening</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script>function try_again(){location.href = "index.html"};</script>
+    
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SUNDAY EVENING </h1>
+    
+    <p class="narrative"> 
+        Your friends return from Vegas with tons of great stories. Two are married. You clearly missed out.
+        <br>[insert personalized message about your score] #priorities
+    </p>
+    
+    <p class="narrative" name="choice">
+        <button onclick="try_again();">Play again?</button>
+    </p>
+    
+    <script>run_narrative();</script>
+    
+</body>
+</html>

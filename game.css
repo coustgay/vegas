@@ -1,0 +1,26 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #000000;
+}
+
+h1 {
+    color: firebrick;
+    text-align: center;
+    font-size: 300%;
+}
+
+p {
+	color: firebrick;
+	font-family: courier, arial;
+	text-indent: 5%;
+	margin-left: 20%;
+	margin-right: 20%
+}
+
+.important {
+    font-style: bold;
+    
+}

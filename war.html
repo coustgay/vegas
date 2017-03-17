@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday night</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="war.js"></script>
+
+    <link href="game.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY NIGHT </h1>
+    
+    <p> Directions: Click the play button to choose the top card on your deck.</p>
+    <p> If your card is higher than your opponent's, you capture both cards.</p>
+    <p> Win by not running out of cards, or going to sleep with the most cards left.</p>
+    
+    <p><button type="button" id="start" onclick="start_war();">Begin Game</button></p>
+    
+    <p class="in_game" id="mycards">$n's deck:</p>
+    
+    <p class="in_game" id="yourcards">$3's deck:</p>
+    
+    <p class="in_game"><button type="button" id="play" onclick="play_card()">3, 2, 1, WAR</button></p>
+    
+    <p class="in_game" id="mycard">$n's card:</p>
+    
+    <p class="in_game" id="yourcard">$3's card:</p>
+
+    <p class="in_game" id="winner"></p>
+
+    <p><button onclick="go_vegas(0);">Go To Sleep</button></p>
+    
+    <p class="in_game" id="test"><button onclick="test_war();">Test War</button></p>
+    
+    <script>$(".in_game").hide(); </script>
+</body>
+</html>

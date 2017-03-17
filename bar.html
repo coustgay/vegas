@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY EVENING </h1>
+
+    <p> Luckily, the bar takes chips! You have $$m</p>
+    
+    <p class="debug"> Luck: $l, Charisma: $c, Tolerance: $t, Sleep: $s</p>
+    
+    <!-- Does this work?: <p class="debug">Free Drinks: 
+                <script>eat("booze");</script></p> -->
+    
+    <h1> MENU </h1>
+    
+    <div name="menu">
+        <button onclick="drink('whiskey');">Whiskey $5</button>
+        <button onclick="drink('beer');">Beer Can $2</button>
+        <button onclick="drink('draft');">Beer Pint $4</button>
+        <button onclick="drink('white');">White Wine $4</button>
+        <button onclick="drink('red');">Red Wine $4</button>
+        <button onclick="drink('gin');">Gin + Tonic $6</button>
+        <button onclick="drink('tequila');">Tequila $5</button>
+        <button onclick="drink('jaeger');">Jaeger Bomb $4</button>
+    </div>
+    <p class="debug"> <button onclick="cheat_menu();">CHEAT</button></p>
+    
+    <script>personalize();$(".debug").hide();bake('rounds',parseInt(eat('rounds')) + 1);</script>
+    
+</body>
+</html>

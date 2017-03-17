@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday Evening</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script>function try_again(){location.href = "index.html"};</script>
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY EVENING </h1>
+    
+    <p class="narrative"> 
+        
+    </p>
+    
+    <p class="narrative"> 
+        The drive to Vegas is long, so you spend Friday night in the desert.
+    </p>
+    
+    <p class="narrative"> 
+        After setting up camp, you all sit around the campfire and discuss how to spend the evening.
+    </p>
+    
+    <p class="narrative"> 
+        $1: I have this bottle that I brought labelled "Whiskey", but I'm not sure if I trust it. Anyone care to help me test it?
+    </p>
+    
+    <p class="narrative"> 
+        $2: I brought a blacklight, we could go look for scorpions! They glow neon green under UV!
+    </p>
+    
+    <p class="narrative"> 
+        $3: I brought cards, do you want to practice for tomorrow with some classic war?
+    </p>
+    
+    <p class="narrative"> 
+        $4: God, I've been eyeing that mountain all night, I'm just itching to get to the top of it.
+    </p>
+    
+    <p class="narrative"> 
+        You consider your options, knowing that you will only be able to join one of them
+    </p>
+    
+    <p class="narrative" name="choice">
+        <button onclick="try_again();">Go Back to School</button>
+        <button onclick="go_whiskey();">Play "Is This Whiskey"</button>
+        <button onclick="go_war();">Play the Game of War</button>
+        <button onclick="go_scorpion();">Look for Scorpions</button>
+        <button onclick="go_mountain();">Climb the Mountain</button>
+    </p>
+    
+    <script>run_narrative();bake('laid',0);bake('married',0);bake('money',500);bake('atm',500);bake('booze',3);</script>
+    
+</body>
+</html>

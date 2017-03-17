@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Saturday Afternoon</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY AFTERNOON </h1>
+    
+    <p class="narrative"> 
+        You and your friends rush off to the chapel, excited to be partaking in one of the most famous Vegas traditions.
+    </p>
+    
+    <p class="narrative"> 
+        Your new fiance kisses you repeatedly for suggesting it. After stopping to pick up a gown, you charge into the chapel. 
+    </p>
+    
+    <p class="narrative"> 
+        The ceremony is beautiful, your new spouse is beautiful, and you couldn't feel happier. You each take a shot to celebrate, then walk back towards the casino.
+    </p>
+    
+    <p class="narrative" name="choice">
+        <button onclick="go_vegas('married',1);">Done</button>
+    </p>
+    
+    <script>run_narrative();bake("booze",parseInt(eat("booze")) - 1);bake("money",parseInt(eat("money")) + 350);</script>
+    
+</body>
+</html>

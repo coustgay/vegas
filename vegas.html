@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Saturday Morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY AFTERNOON </h1>
+    
+    <p class="narrative"> 
+        You drive through vegas, seeing the sign and remembering the famous quote from "Fear and Loathing"
+    </p>
+    
+    <p class="narrative"> 
+        "With the right kind of eyes, you can almost see the high-water mark - that place where the wave finally broke, and rolled back"
+    </p>
+    
+    <p class="narrative"> 
+        You excitedly pile out of the car, and rush to the closest intersection, discussing what you want to do first.
+    </p>
+    
+    <p class="narrative"> 
+        You see so many options in front of you, it becomes hard to choose. Your friends turn to you for a decision.
+    </p>
+    
+    <p class="narrative"> 
+        You look at your wallet. It contains $$m. Is that enough? How much does food cost? a Hotel?
+    </p>
+    
+    <p class="narrative">
+        Could you save money buying booze now? Are prostitutes cheaper on the street than in the casino?
+    </p>
+    
+    <p class="married"> 
+        You all return from the chapel, happy as can be. You return to mostly the same choices, however.
+    </p>
+    
+    <p class="married"> 
+        You and your new spouse decide to pool your cash. You have $$m.
+    </p>
+    
+    <p class="married">
+        Where should you go next? The night is still young.
+    </p>
+    
+    <p class="narrative" name="choice" id="notmarried"><br>
+        <button type="button" id="food" onclick="get_('food');">Go To Ruth's Chris Steakhouse</button><br>
+        <button type="button" id="booze" onclick="get_('booze');">Go To a Liquor Store</button><br>
+        <button type="button" id="hotel" onclick="get_('hotel');">Book your Hotel Room</button><br>
+        <button type="button" id="hooker" onclick="get_('hooker');">Hire a Hooker</button><br>
+        <button type="button" id="married" onclick="go_chapel();">Get Married</button><br>
+        <button type="button" onclick="go_casino();">Go To the Casino</button><br>
+    </p>
+    
+    <p class="married" name="choice"><br>
+        <button type="button" id="food" onclick="get_('food');">Go To Ruth's Chris Steakhouse</button><br>
+        <button type="button" id="booze" onclick="get_('booze');">Go To a Liquor Store</button><br>
+        <button type="button" id="hotel" onclick="get_('hotel');">Book your Hotel Room</button><br>
+        <button type="button" onclick="go_casino();">Go To the Casino</button><br>
+    </p>
+    
+    <script>if(eat("laid") != '1'){$("#married").hide();};bake('rounds',0);</script>
+    
+    <script>if(parseInt(eat('married')) > 0){$(".narrative").hide();$(".married").show();
+                } else {$(".married").hide(); run_narrative();} </script>
+</body>
+</html>

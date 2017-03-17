@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script src="slots.js"></script>
+
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY EVENING </h1>
+
+    <p> Pull the Lever, Kronk! You have $$m in chips </p>
+    
+    <h1><input type="text" id="slot1" value=7 disabled>
+        <input type="text" id="slot2" value=7 disabled>
+        <input type="text" id="slot3" value=7 disabled></h1>
+    
+    <div name="controls">
+        <button onclick="slot_plus();" id="plus">Raise Bet 5$</button>
+        <button onclick="slot_fifty();" id="plus">Raise Bet 50$</button>
+        <button onclick="slot_min();" id="min">Withdraw 5$</button>
+        <button onclick="slot_all();" id="min">Withdraw All</button>
+        <input type="number" id="bet" value=0 disabled>
+        <button onclick="spin_slots();" id="spin">Pull Lever</button>
+        <button onclick="stop_slots();" id="stop">Stop Slots</button>
+        <button onclick="go_casino();">Leave</button>
+    </div>
+   
+    <script>bake('rounds',parseInt(eat('rounds')) + 1);personalize();</script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script src="blackjack.js"></script>
+    <script src="ending.js"></script>
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY EVENING </h1>
+    
+    <p> 
+        Text based implementation maybe eventually, 
+        card images probably never.
+        Note: Dealer hits a soft 16.
+    </p>
+        
+    <p class="in_game" id="pot">Pot: $0<p>
+    
+    <p class="in_game" id="dealer_cards"> Dealer's Hand: </p>
+    <p class="in_game" id="p1_cards"> P1's Hand: </p>
+    <p class="in_game" id="p2_cards"> P2's Hand: </p>
+    <p class="in_game" id="p3_cards"> P3's Hand: </p>
+    <p class="in_game" id="p4_cards"> P4's Hand: </p>
+    <p class="in_game" id="p5_cards"> P5's Hand: </p>
+    <p class="in_game" id="p6_cards"> P6's Hand: </p>
+    <p class="in_game" id="my_cards"> Your Hand: </p>
+    
+    <p class="in_game" id="buttons">
+    <button onclick="raise()">Raise</button><input type="number" id="bet">
+    <button onclick="player_ai[1].hit()">Hit Me</button>
+    <button onclick="check(my_hand)">Check</button>
+    <button onclick="fold(my_hand)">Fold</button>
+    </p>
+    
+    
+    <script>$(".in_game").hide();start_blackjack();</script>
+    
+</body>
+</html>

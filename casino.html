@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script src="ending.js"></script>
+
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SATURDAY EVENING </h1>
+    
+    <p class="narrative">
+        You walk into the Casino, smelling the stench of booze and disappointment, with a faint hint of monumental joy
+    </p>
+    <p class="narrative"> 
+        You move to the counter, and you and your friends get as many chips as you can. You look at the receipt: 980 chips, 245$.
+    </p>
+    <p class="narrative"> 
+        $4 says "Come on, $n, lets head over to the fucking tables and play some motherfucking Blackjack! Woooo! Wubba lubba dub dub!"
+    </p>
+    <p class="narrative"> 
+        "I think I prefer playing darts by the bar, honestly. It's much less stressful" responds $3.
+    </p>
+    <p class="narrative"> 
+        $1 says "Nah, lets all start with some cocktails from the bar, to get us feeling lucky."
+    </p>
+    <p class="narrative"> 
+        "Pshh real gamblers play the slots! It's the only game with no player control." yells $2, running off towards the machines.
+    </p>
+    
+    <p class="return">Chips: $$m</p>
+    
+    <p class="narrative" class="choice" id="bar">
+        <button onclick="bar();">Go to the Bar</button>
+        <button onclick="darts();">Play Darts</button>
+        <button onclick="atm();">Check ATM</button>
+    </p>
+    <p class="narrative" class="choice" id="gamble">
+        <button onclick="blackjack();">Blackjack</button>
+        <button onclick="roulette();">Roulette</button>
+        <button onclick="slots();">Slots</button>
+    </p>
+    
+    
+    <script>bake('entered',1);</script>
+    
+    <script>if(eat('entered') != 1){$('.return').hide(); run_narrative();
+                } else {$('.narrative').hide(); personalize(); $('.choice').show();}</script>
+</body>
+</html>

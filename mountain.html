@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Friday morning</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> FRIDAY MORNING </h1>
+    
+    <p class="narrative"> 
+        You and $4 race to the foot of the mountain, it looks to be about 400 ft tall.
+    </p>
+    
+    <p class="narrative"> 
+        As you climb, $4 speaks to you in a hushed tone, saying that it helps maintain the tranquil atmosphere.
+    </p>
+    
+    <p class="narrative"> 
+        Before you realize it, you're almost at the top. You didn't even feel time passing.
+    </p>
+    
+    <p class="narrative"> 
+        $4 looks up at the last rock, then turns back towards you, smiling, and says
+    </p>
+    
+    <p class="narrative"> 
+        "$n, talking to you has been so easy and relaxing. I barely felt like I was exerting myself climbing."
+    </p>
+    
+    <p class="narrative"> 
+        "I know this might be out of the blue, $n, but I really like you. Like, a lot."
+    </p>
+    
+    <p class="narrative"> 
+        "But I still want to stay friends if you don't share the same feelings."
+    </p>
+    
+    <p class="narrative"> 
+        "Tell you what. I'm going to climb to the top and sit there facing away."
+    </p>
+    
+    <p class="narrative">
+         "If you follow me up, I'll kiss you. Otherwise, I'll meet you back at camp." 
+    </p>
+    
+    <p class="narrative">
+        "What happens on the way to Vegas stays in Vegas, right?"
+    </p>
+    
+    <p class="narrative">
+        $4 climbs over the rock and slowly moves out of sight.
+    </p>
+    
+    
+    <p class="narrative" name="choice">
+        <button onclick="go_vegas('sleep',1);">Kiss $4</button>
+        <button onclick="go_vegas('sleep',0);">Climb Down</button>
+    </p>
+    
+    <script>run_narrative();</script>
+</body>
+</html>

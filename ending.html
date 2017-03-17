@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Saturday Night</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>
+    <script src="cookies.js"></script>
+    <script src="narrate.js"></script>
+    <script src="ending.js"></script>
+
+    <link href="narrative.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <h1 class="time"> SUNDAY MORNING </h1>
+    
+    <p id="survive" class="narrative"> 
+        Eventually, you feel yourself passing out, so you gather your friends and make your way to the hotel.
+    </p>
+        
+    <p id="result" class="narrative"> 
+        The next morning, you wake up in a daze, then frantically pull out your wallet: 
+    </p>
+    
+    <h1 id="congrats" class="narrative"> Congrats! You survived Las Vegas! </h1>
+    
+    <p class="narrative"> 
+        Unfortunately, you'll have to retake that test when you get back. Was it worth it?
+    </p>
+    
+    <p class="narrative" name="choice">
+        <button onclick="go_test();">Play again?</button> Note that you must retake the test to play again (but you don't have to pass)
+    </p>
+    
+    <p class="debug" name="choice"><br>
+        <button onclick="death(1);">Counting Cards</button><br>
+        <button onclick="death(2);">Too Drunk</button><br>
+        <button onclick="death(3);">Flirting</button><br>
+        <button onclick="death(4);">Sleep</button>
+        <button onclick="death(5);">Broke</button>
+    </p>
+    
+    
+    
+    <script>update_score();$(".debug").hide();</script>
+    
+</body>
+</html>
